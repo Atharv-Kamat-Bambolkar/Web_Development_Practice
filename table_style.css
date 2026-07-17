@@ -1,0 +1,39 @@
+table { 
+    border: 2px black solid; 
+    border-collapse: collapse; 
+    border-spacing: 1px;
+    table-layout: auto;
+    caption-side: top;
+    empty-cells: show;
+}
+
+th {
+    padding: 5px;
+    border: 5px purple solid;
+    width: 50;
+    height: 50;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bolder;
+}
+
+td { 
+    padding: 10px;
+    border: 5px red solid; 
+    text-align: center;
+    width: 50;
+    height: 50;
+    text-align: center;
+    vertical-align: auto;
+    font-weight: lighter;
+}
+
+th:hover {
+    background-color: purple;
+    color: aliceblue;
+}
+
+td:hover {
+    background-color: red;
+    color: aliceblue;
+}

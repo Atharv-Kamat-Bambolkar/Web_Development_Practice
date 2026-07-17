@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Registration Form</h1>
+        <label for="collegename">College Name: </label>
+        <input type="text"
+        name="collegename"
+        id="collegename"
+        placeholder="Enter College Name"
+        required>
+        <p><b>Please fill the registration form here!</b></p>
+    </header>
+    <section>
+        <h2>Personal Information</h2>
+        <label for="studentname">Student Name: </label>
+        <input type="text"
+        name="studentname"
+        id="studentname"
+        placeholder="Enter Student Name"
+        required>
+        <br><br>
+        <label for="fathername">Father Name: </label>
+        <input type="text"
+        name="fathername"
+        id="fathername"
+        placeholder="Enter Father Name"
+        required>
+        <br><br>
+        <label for="mothername">Mother Name: </label>
+        <input type="text"
+        name="mothername"
+        id="mothername"
+        placeholder="Enter Mother Name"
+        required>
+        <br><br>
+        <label for="email">Email Address: </label>
+        <input type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your Email"
+        required>
+        <br><br>
+        <label for="number">Mobile Number: </label>
+        <input type="number"
+        name="number"
+        id="number"
+        placeholder="Enter Mobile Number"
+        required>
+        <br><br>
+        <label for="dob">Date of Birth: </label>
+        <input type="date"
+        name="dob"
+        id="dob"
+        placeholder="Enter your Birthday"
+        required>
+        <br><br>
+        <label for="password">Password: </label>
+        <input type="password"
+        name="password"
+        id="password"
+        placeholder="Enter your Password"
+        required>
+        <br><br>
+        <label for="website">Personal Website: </label>
+        <input type="url"
+        name="website"
+        id="website"
+        placeholder="Enter your Website"
+        required>
+        <br><br>
+        <label for="photograph">Upload Photograph: </label>
+        <input type="file"
+        name="photograph"
+        id="photograph"
+        required>
+    </section>
+    <section>
+        <h2>Gender</h2>
+        <input type="radio"
+        name="male"
+        id="male"
+        value="Male">Male
+        <br><br>
+        <input type="radio"
+        name="female"
+        id="female"
+        value="Female">Female
+        <br><br>
+        <input type="radio"
+        name="other"
+        id="other"
+        value="Other">Other
+    </section>
+    <section>
+        <h2>Hobbies</h2>
+        <input type="checkbox"
+        name="reading"
+        id="reading"
+        value="Reading">Reading
+        <br><br>
+        <input type="checkbox" 
+        name="sports" 
+        id="sports"
+        value="Sports">Sports
+        <br><br>
+        <input type="checkbox" 
+        name="music" 
+        id="music"
+        value="Music">Music
+        <br><br>
+        <input type="checkbox" 
+        name="coding" 
+        id="coding"
+        value="Coding">Coding
+        <br><br>
+        <input type="checkbox" 
+        name="painting" 
+        id="painting"
+        value="Painting">Painting
+        <br><br>
+        <input type="checkbox" 
+        name="dancing" 
+        id="dancing"
+        value="Dancing">Dancing
+    </section>
+    <section>
+        <h2>Select Course</h2>
+        <select name="course" 
+        id="course">
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+            <option value="BTech">BTech</option>
+            <option value="BSc">BSc</option>
+        </select>
+    </section>
+    <section>
+        <h2>Select Skills</h2>
+        <select name="skills" 
+        id="skills">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="PHP">PHP</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="C/C++">C/C++</option>
+        </select>
+    </section>
+    <section>
+        <h2>Address</h2>
+        <textarea name="add" 
+        id="add" 
+        placeholder="Enter your Address"></textarea>
+        
+    </section>
+    <br>
+    <section>
+        <input type="submit" value="Register Form">
+        <input type="reset" value="Clear Form">
+    </section>
+    <br>
+    <footer>
+        <h2>College Fees Table</h2>
+        <table>
+            <thead>
+                <td>Semester</td>
+                <td>Tuition Fees</td>
+                <td>Exam Fees</td>
+                <td>Library fees</td>
+                <td>Total</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>I</td>
+                    <td>52,000</td>
+                    <td>200</td>
+                    <td>2,000</td>
+                    <td>54,200</td>
+                </tr>
+                <tr>
+                    <td>II</td>
+                    <td>40,000</td>
+                    <td>200</td>
+                    <td>2,000</td>
+                    <td>42,200</td>
+                </tr>
+                <tr>
+                    <td>III</td>
+                    <td>40,000</td>
+                    <td>200</td>
+                    <td>2,000</td>
+                    <td>42,200</td>
+                </tr>
+                <tr>
+                    <td>IV</td>
+                    <td>40,000</td>
+                    <td>200</td>
+                    <td>2,000</td>
+                    <td>42,200</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Grand Total</td>
+                    <td>180800</td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
+</body>
+</html>

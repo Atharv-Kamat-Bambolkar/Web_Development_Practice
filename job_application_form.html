@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <header>
+        <h1>Job Application Form</h1>
+        <p>Please fill the application form here!</p>
+    </header>
+    <section>
+        <h2>Personal Information</h2>
+        <form>
+            <label for="username">Name:</label>
+            <input type="text" 
+            name="username"
+            id="username" 
+            placeholder="Enter full name" 
+            required>
+            <br><br>
+            <label for="useremail">Email:</label>
+            <input type="email" 
+            name="useremail"
+            id="useremail" 
+            placeholder="Enter your email" 
+            required>
+            <br><br>
+            <label for="usernumber">Phone Number:</label>
+            <input type="number" 
+            name="usernumber"
+            id="usernumber" 
+            placeholder="Enter phone number" 
+            required>
+            <br><br>
+            <label for="userdob">Date of Birth:</label>
+            <input type="date" 
+            name="userdob"
+            id="userdob" 
+            placeholder="Enter your birthday" 
+            required>
+            <br><br>
+            <label for="userpassword">Password:</label>
+            <input type="password" 
+            name="userpassword"
+            id="userpassword" 
+            placeholder="Create your password" 
+            required>
+            <br><br>
+            <label for="userportfolio">Portfolio:</label>
+            <input type="url" 
+            name="userportfolio"
+            id="userportfolio" 
+            placeholder="Portfolio Website" 
+            required>
+            <br><br>
+            <label for="resume">Upload Resume:</label>
+            <input type="file" 
+            name="resume"
+            id="resume" 
+            required>
+        </form>
+    </section>
+    <section>
+        <h2>Gender</h2>
+        <input type="radio"
+        name="male" 
+        id="male" 
+        value="Male">Male
+        <br><br>
+        <input type="radio"
+        name="female" 
+        id="female"
+        value="Female">Female
+        <br><br>
+        <input type="radio"
+        name="other" 
+        id="other"
+        value="Other">Other
+    </section>
+    <section>
+        <h2>Technical Skills</h2>
+        <input type="checkbox" 
+        name="html" 
+        id="html"
+        value="HTML">HTML
+        <br><br>
+        <input type="checkbox" 
+        name="css" 
+        id="css"
+        value="CSS">CSS
+        <br><br>
+        <input type="checkbox" 
+        name="javascript" 
+        id="javascript"
+        value="JavaScript">JavaScript
+        <br><br>
+        <input type="checkbox" 
+        name="java" 
+        id="java"
+        value="Java">Java
+        <br><br>
+        <input type="checkbox" 
+        name="python" 
+        id="python"
+        value="Python">Python
+        <br><br>
+        <input type="checkbox" 
+        name="c/c++" 
+        id="c/c++" 
+        value="C/C++">C/C++
+    </section>
+    <section>
+        <h2>Apply Position</h2>
+        <select name="position" 
+        id="position">
+            <option value="Frontend Developer">Frontend Developer</option>
+            <option value="Backend Developer">Backend Developer</option>
+            <option value="Full Stack Web Developer">Full Stack Web Developer</option>
+            <option value="JavaScript Programmer">JavaScript Programmer</option>
+        </select>
+    </section>
+    <section>
+        <h2>Job Location</h2>
+        <select name="location" 
+        id="location">
+            <option value="Goa">Goa</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Kerala">Kerala</option>
+        </select>
+    </section>
+    <section>
+        <h2>About Yourself</h2>
+        <textarea name="about" 
+        id="about" 
+        placeholder="Enter your description"></textarea>
+    </section>
+    <br>
+    <section>
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+    </section>
+    <footer>
+        <p>Thank you for filling the form.</p>
+    </footer>
+</body>
+</html>
