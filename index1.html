@@ -6,17 +6,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.goolgeapis.com/css2?family=Sofia">
     <style>
-        table, th, td { 
+        /* table, th, td { 
             border: 1px solid black;
             /* padding: 10px;  */
-        }
-        table { 
+        /*}
+        table.tablecontainer { 
             border-collapse: collapse; 
             width: 20%;
+            overflow-x: auto;
             /* height: 50%;  */
             /* border-collapse: separate;
             border-spacing: 10px; */
-        }
+        /*}
         td, th {
             padding: 8px;
             text-align: left;
@@ -28,7 +29,7 @@
             background-color: #4caf50;
             color: white;
             /* height: 50px;  */
-        } 
+        /*}  */
         /* td {
             text-align: center;
             height: 50px;
@@ -50,7 +51,40 @@
 <body>
     <h1>Sofia Font</h1>
     <p>This is a paragraph using the Sofia font.</p>
-    <table>
+    <div style="width: 100%; overflow-x: auto;">
+  <table style="width: 100%; min-width: 600px; border-collapse: collapse;">
+    <thead>
+      <tr style="background-color: #f2f2f2;">
+        <th style="padding: 10px; border: 1px solid #ccc;">Header 1</th>
+        <th style="padding: 10px; border: 1px solid #ccc;">Header 2</th>
+        <th style="padding: 10px; border: 1px solid #ccc;">Header 3</th>
+        <th style="padding: 10px; border: 1px solid #ccc;">Header 4</th>
+        <th style="padding: 10px; border: 1px solid #ccc;">Header 5</th>
+        <th style="padding: 10px; border: 1px solid #ccc;">Header 6</th>
+        <th style="padding: 10px; border: 1px solid #ccc;">Header 7</th>
+        <th style="padding: 10px; border: 1px solid #ccc;">Header 8</th>
+        <th style="padding: 10px; border: 1px solid #ccc;">Header 9</th>
+        <th style="padding: 10px; border: 1px solid #ccc;">Header 10</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 10px; border: 1px solid #ccc;">Data 1</td>
+        <td style="padding: 10px; border: 1px solid #ccc;">Data 2</td>
+        <td style="padding: 10px; border: 1px solid #ccc;">Data 3</td>
+        <td style="padding: 10px; border: 1px solid #ccc;">Data 4</td>
+        <td style="padding: 10px; border: 1px solid #ccc;">Data 5</td>
+        <td style="padding: 10px; border: 1px solid #ccc;">Data 6</td>
+        <td style="padding: 10px; border: 1px solid #ccc;">Data 7</td>
+        <td style="padding: 10px; border: 1px solid #ccc;">Data 8</td>
+        <td style="padding: 10px; border: 1px solid #ccc;">Data 9</td>
+        <td style="padding: 10px; border: 1px solid #ccc;">Data 10</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    <!-- <table class="tablecontainer">
         <tr>
             <th>Name</th>
             <th>Age</th>
@@ -63,7 +97,7 @@
             <td>Jane</td>
             <td>30</td>
         </tr>
-    </table>
+    </table> -->
     <!-- <ul class="UL">
         <li>Coffee</li>
         <li>Tea</li>
