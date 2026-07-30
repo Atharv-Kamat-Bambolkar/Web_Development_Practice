@@ -4,8 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: red;
+            padding: 30px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        } */
+        .container {
+            display: flex;
+            background-color: white;
+            /* flex-flow: row wrap; */
+            /* justify-content: center; */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* align-content: center; */
+            /* align-content: stretch; */
+            /* align-content: space-between; */
+            align-content: space-evenly;
+            height: 400px;
+            /* align-items: center; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: stretch; */
+            /* align-items: baseline; */
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: nowrap; */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+        }
+        .container div { 
+            background-color: red;
+            width: 100px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>flexbox</h1>
+    <div class="container">
+        <div style="flex-grow: 1;">1</div>
+        <div style="flex-grow: 1;">2</div>
+        <div style="flex-grow: 3;">3</div>
+        <div style="flex-grow: 2;">4</div>
+        <!-- <div style="order: 4">1</div>
+        <div style="order: 2">2</div>
+        <div style="order: 3">3</div>
+        <div style="order: 1">4</div> -->
+        <!-- <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        <div class="box5">box5</div>
+        <div class="box6">box6</div>
+        <div class="box7">box7</div>
+        <div class="box8">box8</div>
+        <div class="box9">box9</div>
+        <div class="box10">box10</div>
+        <div class="box11">box11</div>
+        <div class="box12">box12</div>
+        <div class="box13">box13</div>
+        <div class="box14">box14</div>
+        <div class="box15">box15</div> -->
+    </div>
 </body>
 </html>
