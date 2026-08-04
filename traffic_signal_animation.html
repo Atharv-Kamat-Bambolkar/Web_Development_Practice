@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Signal - CSS Animation</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 28px;
+            background-color: #12181f;
+            font-family:'Segoe UI', Arial, sans-serif;
+            color: #eef1f5;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 0;
+            letter-spacing: 0.03em;
+        }
+
+        .sub {
+            margin: -18px 0 0;
+            font-size: 0.9rem;
+            color: #9aa4b1;
+        }
+
+        /* Traffic light housing */
+        .traffic-light {
+            background-color: #23262b;
+            border-radius: 16px;
+            padding: 22px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+            border: 3px solid #14161a;
+        }
+
+        .light-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .light {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #3a3f46; /* off state base */
+        }
+
+        .label {
+            font-size: 0.7rem;
+            letter-spacing: 0.06em;
+            color: #6b7280;
+        }
+
+        /* Colors */
+        .light.red { animation: red-cycle 6s infinite; }
+        .light.yellow { animation: yellow-cycle 6s infinite; }
+        .light.green { animation: green-cycle 6s infinite; }
+
+        /* Each color owns exactly 1/3 of the 6s loop = 2s */
+        @keyframes red-cycle {
+            0%, 33.32% { 
+                background-color: #ff4d4d;
+                box-shadow: 0 0 35px 10px rgba(255, 77, 77, 0.7); 
+            }
+            33.33%, 100% {
+                background-color: #4d1a1a;
+                box-shadow: none;
+            }
+        }
+
+        @keyframes yellow-cycle {
+            0%, 33.33%, 66.66%, 100% {
+                background-color: #4d3f14;
+                box-shadow: none;
+            }
+            33.34%, 66.65% {
+                background-color: #ffd23f;
+                box-shadow: 0 0 35px 10px rgba(255, 210, 63, 0.7);
+            }
+        }
+
+        @keyframes green-cycle {
+            0%, 66.66%, 100% {
+                background-color: #163a22;
+                box-shadow: none;
+            }
+            66.67%, 99.98% {
+                background-color: #3ddc73;
+                box-shadow: 0 0 35px 10px rgba(61, 220, 115, 0.7);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Traffic Signal - CSS Animation</h1>
+    <p class="sub">Red &rarr; Yellow &rarr; 
+        Green, 2 seconds each, on loop</p>
+
+    <div class="traffic-light">
+        <div class="light-wrap">
+            <div class="light red"></div>
+            <span class="label">Red . 2s</span>
+        </div>
+        <div class="light-wrap">
+            <div class="light yellow"></div>
+            <span class="label">Yellow . 2s</span>
+        </div>
+        <div class="light-wrap">
+            <div class="light green"></div>
+            <span class="label">Green . 2s</span>
+        </div>
+    </div>
+</body>
+</html>
