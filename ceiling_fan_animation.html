@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ceiling Fan — CSS Animation</title>
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    background: #eef1f4;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #1c2126;
+  }
+
+  h1 { font-size: 1.4rem; font-weight: 600; margin: 0; }
+  p.sub { margin: -16px 0 0; font-size: 0.9rem; color: #5b6472; }
+
+  /* ===== Ceiling + rod ===== */
+  .ceiling {
+    width: 260px;
+    height: 20px;
+    background: #d7dbe0;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  }
+
+  .rod {
+    width: 8px;
+    height: 60px;
+    background: linear-gradient(#9aa1ab, #6b7280);
+    margin: 0 auto;
+  }
+
+  /* ===== Fan assembly (this is the piece that spins) ===== */
+  .fan-stage {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fan-assembly {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    animation: spin 11s linear infinite;
+    transform-origin: 50% 50%;
+  }
+
+  .blade {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 130px;
+    height: 34px;
+    background: linear-gradient(90deg, #2f3947, #4a5668);
+    border-radius: 0 50% 50% 0 / 0 50% 50% 0;
+    transform-origin: 0% 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .blade1 { transform: translate(0, -50%) rotate(0deg); }
+  .blade2 { transform: translate(0, -50%) rotate(120deg); }
+  .blade3 { transform: translate(0, -50%) rotate(240deg); }
+
+  .hub {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle at 35% 35%, #4a5668, #232a33);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    z-index: 2;
+  }
+
+  /*
+    One 11s loop = 6s (slow) + 4s (medium) + 1s (fast).
+    Global timing-function is linear, but each keyframe segment maps
+    a different amount of rotation to its share of the timeline —
+    that's what makes the *rate* of spin change between segments.
+  */
+  @keyframes spin {
+    0%      { transform: rotate(0deg); }      /* start of slow phase   */
+    54.545% { transform: rotate(360deg); }    /* slow: 1 rev in 6s     */
+    90.909% { transform: rotate(720deg); }    /* medium: 1 rev in 4s   */
+    100%    { transform: rotate(1080deg); }   /* fast: 1 rev in 1s     */
+  }
+
+  /* ===== Speed indicator label ===== */
+  .speed-label {
+    position: relative;
+    height: 34px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+
+  .speed-label span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    white-space: nowrap;
+  }
+
+  .speed-label .slow   { color: #2f6f4e; animation: show-slow 11s linear infinite; }
+  .speed-label .medium { color: #b9820f; animation: show-medium 11s linear infinite; }
+  .speed-label .fast   { color: #c0392b; animation: show-fast 11s linear infinite; }
+
+  @keyframes show-slow {
+    0%      { opacity: 1; }
+    54.4%   { opacity: 1; }
+    54.6%   { opacity: 0; }
+    100%    { opacity: 0; }
+  }
+  @keyframes show-medium {
+    0%      { opacity: 0; }
+    54.6%   { opacity: 0; }
+    54.8%   { opacity: 1; }
+    90.7%   { opacity: 1; }
+    90.9%   { opacity: 0; }
+    100%    { opacity: 0; }
+  }
+  @keyframes show-fast {
+    0%      { opacity: 0; }
+    90.9%   { opacity: 0; }
+    91.1%   { opacity: 1; }
+    100%    { opacity: 1; }
+  }
+
+  .legend {
+    font-size: 0.85rem;
+    color: #5b6472;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Ceiling Fan — CSS Animation</h1>
+  <p class="sub">Speed changes on loop: Slow (6s/rev) &rarr; Medium (4s/rev) &rarr; Fast (1s/rev)</p>
+
+  <div class="ceiling"></div>
+  <div class="rod"></div>
+
+  <div class="fan-stage">
+    <div class="fan-assembly">
+      <div class="blade blade1"></div>
+      <div class="blade blade2"></div>
+      <div class="blade blade3"></div>
+      <div class="hub"></div>
+    </div>
+  </div>
+
+  <div class="speed-label">
+    <span class="slow">SLOW &middot; 6s per rotation</span>
+    <span class="medium">MEDIUM &middot; 4s per rotation</span>
+    <span class="fast">FAST &middot; 1s per rotation</span>
+  </div>
+
+  <p class="legend">One full cycle = 11s (6s + 4s + 1s), then it loops back to slow.</p>
+
+</body>
+</html>
