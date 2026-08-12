@@ -41,11 +41,121 @@
 // console.log(typeof y);
 
 // Type Coercion
-let a = "10";
-let b = 5;
-let c = a + b;
-console.log(c);
-console.log(typeof c);
+// let a = "10";
+// let b = 5;
+// let c = a + b;
+// console.log(c);
+// console.log(typeof c);
+
+// let name = "Amaan";
+// console.log(name);
+
+// let str = "hello";
+// str[0] = "S";
+// console.log(str); // hello
+
+// let str = "hello";
+// str = "S" + str.slice(1);
+// console.log(str); // Sello
+
+// let name = "Dilip";
+// let age = 22;
+// console.log(`My name is " + name + " and I am " + age + " years old.`); // same line
+// console.log(`My name is ${name} and I am ${age} years old.`); // My name is Dilip and I am 22 years old.
+
+// let str = "World";
+// let message = `Hello, ${str}`;
+// console.log(message); // Hello, World
+
+// let text = `JavaScript.`;
+// console.log(text.slice(0, 4)); // Java
+
+// split() method splits a string into an array of substrings and returns a new array.
+// let str = "Hello, World!";
+// let arr = str.split(", ");
+// console.log(arr); // [ 'Hello', 'World!' ]
+
+// trim() method removes whitespace from both ends of a string.
+// let str = "   Hello, World!   ";
+// let trimmedStr = str.trim();
+// console.log(trimmedStr); // Hello, World!
+
+// replace() method replaces a specified value with another value in a string.
+// let str1 = "Hello, World!";
+// let newStr = str1.replace("World", "JavaScript");
+// console.log(newStr); // Hello, JavaScript!
+
+// includes() method determines whether a string contains the characters of a specific string
+// let str2 = "Hello, World!";
+// let result = str2.includes("World");
+// console.log(result);
+
+// let str2 = "Hello, World!";
+// let result = str2.includes("JavaScript");
+// console.log(result);
+
+// using + operator
+// let str1 = "Hello, ";
+// let str2 = "World!";
+// let message = str1 + " " + str2;
+// console.log(message);
+
+// using template method
+// let str5 = "Hello, ";
+// let str6 = "World!";
+// let message1 = `${str5}  ${str6}`;
+// console.log(message1);
+
+// concat() method concatenates two or more strings and returns a new string.
+// let str3 = "Hello, ";
+// let str4 = "World!";
+// let concatenatedStr = str3.concat(str4);
+// console.log(concatenatedStr);
+
+// let result = 0.1 + 0.2;
+// console.log(result); // 0.30000000000000004
+// console.log(result.toFixed(2)); // 0.30
+// console.log(typeof result.toFixed(2)); // string
+
+// parseInt()
+// let num = "10";
+// console.log(parseInt(num)); // 10
+// console.log(typeof parseInt(num)); // number
+
+// parseFloat()
+// let num = "10.5";
+// console.log(parseFloat(num)); // 10.5
+
+// isNaN()
+// let result = "Hello" * 5;
+// console.log(result); // NaN
+// console.log(isNaN(result)); // true
+
+// age validation
+// let age = 'abc';
+// if (isNaN(age)) { // true
+//     console.log("Invalid age");
+// }
+
+// Mathematical Operations
+
+// Math.round()
+// console.log(Math.round(4.4));
+// console.log(Math.round(4.5));
+
+// Math.floor()
+// console.log(Math.floor(4.4));
+// console.log(Math.floor(4.5));
+
+// Math.ceil()
+// console.log(Math.ceil(4.4));
+// console.log(Math.ceil(4.5));
+
+// Math.random()
+// console.log(Math.random());
+console.log(Math.random() * 10);
+
+// console.log(0.1 + 0.2); // 0.30000000000000004
 
 // greet();
 // var greet = function() {
