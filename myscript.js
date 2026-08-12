@@ -1,16 +1,74 @@
-// var x = 2;
+// Primitive Data Types
+// let a = 10; // number
+// let b = "Hello"; // string
+// let c = true; // boolean
+// let d = null; // null
+// let e = undefined; // undefined
+// let f = Symbol("id"); // symbol
+// let g = 10n; // bigint
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(d);
+// console.log(e);
+// console.log(f);
+// console.log(g);
+
+// Non-Primitive Data Types / Reference Data Types
+// let h = { name: "John", age: 30}; // object
+// let i = [1, 2, 3]; // array
+// let j = new Date(); // date
+
+// console.log(h);
+// console.log(i);
+// console.log(j);
+
+// let person1 = {
+//     name: "Amaan"
+// };
+// let person2 = person1;
+// person2.name = "Shubham";
+// console.log(person1.name); 
+
+// console.log(typeof 10); // number
+// console.log(typeof "Hello"); // string
+
+// Type Conversion
+// let x = "10";
+// let y = Number(x);
+// console.log(y);
+// console.log(typeof y);
+
+// Type Coercion
+let a = "10";
+let b = 5;
+let c = a + b;
+console.log(c);
+console.log(typeof c);
+
+// greet();
+// var greet = function() {
+//     console.log("Hello");
+// };
+
+// function greet() {
+//     console.log("Hello");
+// }
+
+// var n = 2;
 
 // function square(num) {
 //     var ans = num * num;
 //     return ans;
 // }
 
-// var square2 = square(x);
+// var square2 = square(n);
 // var square4 = square(4);
 
-console.log(x);
+// console.log(x);
 
-let x = 2;
+// let x = 2;
 
 // console.log("Hello World");
 // console.log(5 + 6);
