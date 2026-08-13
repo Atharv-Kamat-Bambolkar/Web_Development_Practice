@@ -47,6 +47,7 @@
 // console.log(c);
 // console.log(typeof c);
 
+// String
 // let name = "Amaan";
 // console.log(name);
 
@@ -153,7 +154,145 @@
 
 // Math.random()
 // console.log(Math.random());
-console.log(Math.random() * 10);
+// console.log(Math.random() * 10);
+
+// const add = (a, b) => a + b;
+// console.log(add(2, 3)); 
+
+// console.log(Math.max(10, 50, 30));
+// console.log(Math.min(10, 50, 30));
+
+// Conditional Statements
+// if
+// if ... else
+// else if
+// switch
+
+// let age = 20;
+// if (age >= 18) {
+//     console.log("Adult");
+// } 
+// else {
+//     console.log("Minor");
+// }
+
+// let marks = 75;
+// if (marks >= 90) {
+//     console.log("A+");
+// }
+// else if (marks >= 80) {
+//     console.log("A");
+// }
+// else if (marks >= 70) {
+//     console.log("B");
+// }
+// else if (marks >= 60) {
+//     console.log("C");
+// }
+// else if (marks >= 50) {
+//     console.log("D");
+// }
+// else {
+//     console.log("Fail");
+// }
+
+// Switch Case
+// let day = 2;
+// switch (day) {
+//     case 1:
+//         console.log("Monday");
+//         break;
+//     case 2:
+//         console.log("Tuesday");
+//         break;
+//     case 3:
+//         console.log("Wednesday");
+//         break;
+//     case 4:
+//         console.log("Thursday");
+//         break;
+//     case 5:
+//         console.log("Friday");
+//         break;
+//     case 6:
+//         console.log("Saturday");
+//         break;
+//     case 7:
+//         console.log("Sunday");
+//         break;
+//     default:
+//         console.log("Invalid Day");
+// }
+
+// Loops
+// for
+// while
+// do ... while
+// for ... in
+// for ... of
+
+// for (initialization, condition, update(increment / decrement))
+// for (let i = 1; i <= 5; i++) {
+//     console.log(i);
+// }
+
+// while (true) {
+//     console.log("Hello");
+// }
+
+// let i = 1;
+// do {
+//     console.log(i);
+//     i++;
+// }
+// while (i <= 5);
+
+// for ... in
+// const student = {
+//     name : "Viraj",
+//     age : 18,
+//     course : "MCA"
+// };
+
+// for (let key in student) {
+//     console.log(key, ":", student[key]);
+// }
+
+// for ... of
+// const numbers = [1, 2, 3, 4, 5];
+// for (let num of numbers) {
+//     console.log(num);
+// }
+
+// for ... in
+// for (let key in numbers) {
+//     console.log(key, ":", numbers[key]);
+// }
+
+// continue keyword
+// for (let i = 1; i <= 10; i++) {
+//     if (i == 3) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+// Nested Loop
+// for (let i = 1; i <= 5; i++) {
+//     let row = "";
+//     for (let j = 1; j <= i; j++) {
+//         row += "*";
+//     }
+//     console.log(row);
+// }
+
+for (let i = 1; i <= 5; i++) {
+    let row = "";
+    for (let j = 1; j <= i; j++) {
+        row += j;
+    }
+    console.log(row);
+}
 
 // console.log(0.1 + 0.2); // 0.30000000000000004
 
