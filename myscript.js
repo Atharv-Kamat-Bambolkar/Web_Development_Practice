@@ -286,13 +286,56 @@
 //     console.log(row);
 // }
 
-for (let i = 1; i <= 5; i++) {
-    let row = "";
-    for (let j = 1; j <= i; j++) {
-        row += j;
-    }
-    console.log(row);
+// Function
+// function name (p1, p2, p3 ...) {
+//     // code
+// }
+
+// function sayHello() {
+//     return "Hello";
+// }
+// console.log(sayHello());
+
+// function add(a, b) {
+//     console.log(a + b);
+// }
+// add(10, 20);
+
+// function greet(name = "Guest") {
+//     console.log(`Hello, ${name}`);
+// }
+// greet();
+
+// greet();
+// function greet() {
+//     console.log("Hello");
+// } 
+
+myFunction();
+const myFunction = function() {
+    console.log("Hello");
 }
+// myFunction();
+
+// function myFunction() {
+//     let carName = "Volvo";
+//     console.log(carName);
+// }
+// console.log(myFunction());
+
+// function add(a, b) {
+//     return a + b;
+// }
+// let result = add(10, 20);
+// console.log(result);
+
+// for (let i = 1; i <= 5; i++) {
+//     let row = "";
+//     for (let j = 1; j <= i; j++) {
+//         row += j;
+//     }
+//     console.log(row);
+// }
 
 // console.log(0.1 + 0.2); // 0.30000000000000004
 
